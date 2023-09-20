@@ -1,0 +1,241 @@
+.form {
+  padding-bottom: 50px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @media (max-width: 1200px) {
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__item {
+    width: 370px;
+    height: 48px;
+
+    @media (max-width: 1200px) {
+      width: 300px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    label {
+      height: 48px;
+      display: block;
+      background-color: #fff;
+      text-align: center;
+      padding: 12px 0;
+      text-transform: uppercase;
+      @extend %lato-600;
+      font-size: 15px;
+      color: #272733;
+      border-radius: 5px;
+
+      span {
+        display: inline-block;
+        padding-top: 2px;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  &__input {
+    background-color: #fff;
+    border: 2px solid transparent;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 5px;
+    @extend %lato-400;
+    color: #272733;
+    font-size: 18px;
+    background-color: #fff;
+
+    &_file {
+      display: none;
+    }
+
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @media (max-width: 1200px) {
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__range {
+    width: 777px;
+    position: relative;
+
+    @media (max-width: 1200px) {
+      width: 620px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .form__range-text {
+      color: $primary;
+      @extend %lato-400;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width:576px) {
+        display: block;
+      }
+
+      span+span {
+        @media (max-width:576px) {
+          margin-left: 40px;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .irs-min,
+    .irs-max {
+      display: none;
+    }
+
+    .irs-bar {
+      background-color: #fff;
+      height: 6px;
+    }
+
+    .irs-line {
+      height: 6px;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+
+    .irs-handle {
+      background-color: #42A9ED;
+      width: 24px;
+      height: 24px;
+      border: 3px solid #286690;
+      border-radius: 50%;
+      top: 45%;
+    }
+
+    .irs-handle>i:first-child {
+      display: none;
+    }
+
+    .irs-single {
+      top: -23px;
+      left: 92% !important;
+      color: $primary;
+      @extend %lato-400;
+      font-size: 18px;
+      line-height: 1.333;
+      text-shadow: none;
+      padding: 0;
+      background-color: transparent;
+      border-radius: 0;
+
+      @media (max-width: 576px) {
+        left: 0 !important;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+  }
+
+  &__button {
+    display: block;
+    width: 370px;
+    margin: 0 auto;
+    height: 48px;
+    background-color: $secondary;
+    border: 1px solid $primary;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: $primary;
+    @extend %lato-600;
+    font-size: 15px;
+
+    @media (max-width:576px) {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width:576px) {
+  .form__range-text span {
+    display: block;
+  }
+}
+
+
+.select {
+  max-width: 370px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    display: block;
+    max-width: 100%;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url(../../images/icons/arrow.svg);
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  select {
+    border: 2px solid transparent;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 5px;
+    appearance: none;
+    @extend %lato-400;
+    color: #272733;
+    font-size: 18px;
+    background-color: #fff;
+  }
+
+  select:focus {
+    outline: none;
+    border: 2px solid $secondary;
+  }
+
+}

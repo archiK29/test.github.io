@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Lato-400';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Lato-400'),
+    url('../../fonts/Lato-400.woff2') format('woff2'),
+    url('../../fonts/Lato-400.woff') format('woff');
+  /* свойство swap позволяет сначало подгрузить текст на сайте и потом подгрузить шрифт */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-600';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Lato-600'),
+    url('../../fonts/Lato-600.woff2') format('woff2'),
+    url('../../fonts/Lato-600.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-700';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Lato-700'),
+    url('../../fonts/Lato-700.woff2') format('woff2'),
+    url('../../fonts/Lato-700.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-900';
+  font-weight: 900;
+  font-style: normal;
+  src: local('Lato-900'),
+    url('../../fonts/Lato-900.woff2') format('woff2'),
+    url('../../fonts/Lato-900.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway-900';
+  font-weight: 900;
+  font-style: normal;
+  src: local('Raleway-900'),
+    url('../../fonts/Raleway-900.woff2') format('woff2'),
+    url('../../fonts/Raleway-900.woff') format('woff');
+  font-display: swap;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стартовый шаблон</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+</head>
+
+<body>
+  <header class="header"">
+    <div class=" container">
+    <div class="header__body">
+      <a href="#!" class="header__logo logo">
+        LOREMIPSUM.<span>NET</span>
+      </a>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li><a href="#!" class="active">Бизнес</a></li>
+          <li><a href="#!">О нас</a></li>
+          <li><a href="#!">Цены</a></li>
+          <li><a href="#!">Оформить заказ</a></li>
+        </ul>
+      </nav>
+      <div class="header__burger">
+        <span></span>
+      </div>
+
+    </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="description"
+      style="background-image: url(images/desription_bg.jpg); background-size: cover; background-position: right center; background-repeat: no-repeat;">
+      <div class="container">
+        <div class="description__inner">
+          <h1 class="description__title">
+            Lorem ipsum <span>dolor sit <br> amet
+              consectetur</span> adipiscing
+          </h1>
+          <div class="description__subtitle">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+          </div>
+          <div class="description__text">
+            <p>- Totam rem aperiam eaque ipsa</p>
+            <p>- Sit voluptatem accusantium doloremque laudantium</p>
+            <p>- Sed ut perspiciatis, unde omnis iste natus error</p>
+          </div>
+          <div class="description__buttons">
+            <button class="description__btn" type="button">Заказать</button>
+            <button class="description__btn" type="button">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order"
+      style="background-image: url(images/order_bg.jpg); background-size: cover; background-repeat: no-repeat;">
+      <div class="container">
+        <div class="order__inner">
+          <h2 class="order__title">
+            Оформление <span>Заказа</span>
+          </h2>
+          <div class="order__text">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </div>
+          <div class="order__items">
+            <div class="order__item-wrapper">
+              <div class="order__item">
+                <img class="order__img-icon" src="./images/icons/search.svg" alt="search logo">
+              </div>
+              <div class="order__item-text">
+                Lorem ipsum dolor
+                sit amet
+              </div>
+            </div>
+            <img class="order__img-dots" src="./images/icons/dots.svg" alt="dots">
+            <div class="order__item-wrapper">
+              <div class="order__item">
+                <img class="order__img-icon" src="./images/icons/percent.svg" alt="percent logo">
+              </div>
+              <div class="order__item-text">
+                Сonsecteturadipiscing elit
+              </div>
+            </div>
+            <img class="order__img-dots" src="./images/icons/dots.svg" alt="dots">
+            <div class="order__item-wrapper">
+              <div class="order__item">
+                <img class="order__img-icon" src="./images/icons/doc.svg" alt="document logo">
+              </div>
+              <div class="order__item-text">
+                Sed do eiusmod tempor
+              </div>
+            </div>
+            <img class="order__img-dots" src="./images/icons/dots.svg" alt="dots">
+            <div class="order__item-wrapper">
+              <div class="order__item">
+                <img class="order__img-icon" src="./images/icons/letter.svg" alt="letter logo">
+              </div>
+              <div class="order__item-text">
+                Esse cillum dolore
+                eu fugiat
+              </div>
+            </div>
+            <img class="order__img-dots" src="./images/icons/dots.svg" alt="dots">
+            <div class="order__item-wrapper">
+              <div class="order__item">
+                <img class="order__img-icon" src="./images/icons/cash.svg" alt="cash logo">
+              </div>
+              <div class="order__item-text">
+                Excepteur sint occaecat cupidatat non proident
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form">
+          <form action="#" class="form__body">
+            <div class="form__top">
+              <div class="form__item">
+                <div class="select">
+                  <select name="select">
+                    <option disabled selected>Выберите тип системы</option>
+                    <option value="value-1">Sed ut perspiciatis </option>
+                    <option value="value-2">Nemo enim ipsam</option>
+                    <option value="value-3">Et harum quidem</option>
+                    <option value="value-4">Temporibus autem</option>
+                    <option value="value-5">Itaque earum rerum</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__item">
+                <input class="form__input" type="text" name="email" placeholder="Ваш e-mail">
+              </div>
+              <div class="form__item">
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+              </div>
+            </div>
+
+
+            <div class="form__bottom">
+              <div class="form__range">
+                <div class="form__range-text">
+                  <span>Sed ut perspiciatis, unde omnis iste natus</span>
+                  <span>%</span>
+                </div>
+                <input type="text" id="example_id" name="example_name" value="75" />
+              </div>
+              <div class="form__item">
+                <input class="form__input form__input_file" type="file" name="file" id="file">
+                <label for="file"><img src="./images/icons/file.svg" alt="file icon"><span>Прикрепить
+                    файл</span></label>
+              </div>
+            </div>
+
+            <button class="form__button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__rights footer__block">
+          <span>© 2018 «LOREMIPSUM.NET» Все права защищены.</span>
+        </div>
+        <div class="footer__pay-items footer__block">
+          <div class="footer__pay-item">
+            <img src="./images/icons/footer_icons/qiwi.svg" alt="qiwi icon">
+            <span>Qiwi wallet</span>
+          </div>
+          <div class="footer__pay-item">
+            <img src="./images/icons/footer_icons/yandex_money.svg" alt="Yandex Money icon">
+            <span>Yandex Money</span>
+          </div>
+          <div class="footer__pay-item">
+            <img src="./images/icons/footer_icons/webmoney.svg" alt="Web Money icon">
+            <span>Web Money</span>
+          </div>
+
+        </div>
+        <div class="footer__social footer__block">
+          <a href="#" class="footer__social-item">
+            <img src="./images/icons/footer_icons/mail.svg" alt="mail icon">
+            <span>info@ipsum228.com</span>
+          </a>
+          <a href="#" class="footer__social-item">
+            <img src="./images/icons/footer_icons/vk.svg" alt="vk icon">
+            <span>Мы вконтакте</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="./js/script.min.js"></script>
+</body>
+
+</html>

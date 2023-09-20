@@ -1,0 +1,139 @@
+.footer {
+	min-height: 80px;
+	background-color: #3D4050;
+	@extend %lato-400;
+	font-size: 13px;
+	color: #fff;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media(max-width: 992px) {
+			display: block;
+		}
+	}
+
+	&__block {
+		@media(max-width: 992px) {
+			width: 30%;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__rights {
+		width: 29%;
+
+		@media(max-width: 1200px) {
+			width: 33.3%;
+		}
+
+		@media(max-width: 992px) {
+			width: 100%;
+		}
+
+		span {
+			display: block;
+			width: 250px;
+
+			@media(max-width: 992px) {
+				width: 100%;
+			}
+		}
+	}
+
+	&__pay-items {
+		width: 42%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+		color: #C3C3C3;
+		border-left: 1px solid #C3C3C3;
+		border-right: 1px solid #C3C3C3;
+
+		@media(max-width: 1200px) {
+			border: none;
+			width: 33.3%;
+		}
+
+		@media(max-width: 992px) {
+			justify-content: flex-start;
+			width: 100%;
+		}
+
+		@media(max-width: 576px) {
+			justify-content: space-between;
+		}
+	}
+
+	&__pay-item {
+		display: flex;
+		margin: 0 2px 10px;
+
+		img {
+			display: inline-block;
+			margin-bottom: 2px;
+		}
+
+		span {
+			display: inline-block;
+			margin-left: 5px;
+			margin-top: 2px;
+		}
+	}
+
+	&__pay-item+.footer__pay-item {
+		@media(max-width: 992px) {
+			margin-left: 20px;
+		}
+
+		@media(max-width: 576px) {
+			margin-left: 0;
+		}
+	}
+
+	&__social {
+		width: 29%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		@media(max-width: 1200px) {
+			width: 33.3%;
+		}
+
+		@media(max-width: 992px) {
+			justify-content: flex-start;
+			width: 100%;
+		}
+
+		@media(max-width: 576px) {
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		.footer__social-item {
+			display: flex;
+			@extend %lato-400;
+			font-size: 13px;
+			color: #fff;
+			cursor: pointer;
+			margin-bottom: 10px;
+
+			span {
+				display: inline-block;
+				margin-left: 5px;
+			}
+		}
+
+		a+a {
+			margin-left: 40px;
+
+			@media(max-width: 576px) {
+				margin-left: 0;
+			}
+		}
+	}
+}
